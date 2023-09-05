@@ -386,17 +386,19 @@ section.light-mode{
     height: 30px;
     width: 100%;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.2);
-
-    color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #000000;
+  }
+  .navbar-toggle{
+    display: none;
   }
 
   .sidebar {
     position: fixed;
     top: 45px;
     left: 0px;
-    
-    /* background-color: #0015fc; */
+    padding: 0;
+    background: transparent;
     width: 150px;
     height: calc(100vh - 100px);
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
@@ -423,7 +425,7 @@ section.light-mode{
   }
 
   .profile-container {
-    /* background-color: #00f608; */
+    background: transparent;
     display: flex;
     padding: 3px;
     justify-content: space-evenly;
@@ -456,6 +458,11 @@ section.light-mode{
     width: auto;
     text-align: center;
   }
+  .navbar li a, .sidebar .ul a {
+    background: transparent;
+    box-shadow: none;
+    
+}
 
   .aboutme{
     display: flex;
@@ -464,7 +471,6 @@ section.light-mode{
     align-items: center;
     margin-top: 0 auto;
     width: 300px;
-    /* background-color: #ff0000; */
     padding: 5px;
     height: 150px;
     /* overflow: scroll; */
